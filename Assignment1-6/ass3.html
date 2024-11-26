@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novus watch/Assignment 3</title>
+    
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b0a7cf; /* Background color matching the design */
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin-top: -300px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling the badge */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    background-color: #ffef93;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Anchor animation for the badge */
+.badge:hover {
+    animation: bounce 0.6s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Moves badge upward */
+    }
+}
+
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.series {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+}
+
+.card-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+    </style>
+
+</head>
+<body>
+    <div class="card-container"></div>
+        <div class="card">
+            <div class="badge">New and Improved!</div>
+            <img src="./image/novus watch.webp" alt="Novus Watch" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Novus Watch <span class="series">Series IV</span></h2>
+                <p class="card-description">
+                    The pinnacle of fashion and tech. This wearable piece is an homage to gilded palaces and minimal regalia, combining nouveau-deco and brutalism influences in a compact, Swiss-made watch.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

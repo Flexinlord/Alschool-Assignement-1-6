@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.logo-content{
+    background-color: #fff;
+    border: none;
+    margin-top: 100px;
+    margin-bottom: auto;
+    margin-right: 50px;
+    margin-left: 20px;
+    padding: 20px;
+    border-width: 20px;
+    box-sizing: border-box;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    width: 400px;
+}
+
+img {
+    border-radius: 50%;
+   width: 100px;
+    margin-right: 100px;
+}
+
+header  {
+    margin-bottom: 600px;
+    margin-left: -200px;
+    position: relative
+}
+
+/* Form container */
+.registration-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-right: 50px;
+}
+
+/* First name and last name side by side */
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.gender-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.weight-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+}
+
+input[type="text"], input[type="date"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+}
+
+/* Submit button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color:  rgb(11, 175, 197);;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color:  rgb(11, 175, 197);
+}
+
+
+.submit-button:hover {
+    background-color: green;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+}
+
+footer span {
+    color:  rgb(11, 175, 197);;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .name-fields, 
+    .gender-fields, 
+    .weight-fields {
+        flex-direction: column;
+    }
+}
+
+/* Responsive for header-content */
+@media (max-width: 768px) {
+    header-content {
+        flex-direction: column;
+    }
+}
